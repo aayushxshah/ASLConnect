@@ -3,7 +3,7 @@ import mediapipe as mp
 import cv2
 from drawLandmarks import *
 
-def collectFrame(capIn: cv2.VideoCapture()) -> tuple[np.ndarray, np.ndarray]:
+def collectFrame(capIn: cv2.VideoCapture) -> tuple[np.ndarray, np.ndarray]:
 
     _, frameTemp = capIn.read()
     frameColored = cv2.flip(frameTemp, 1)
